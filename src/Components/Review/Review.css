@@ -1,0 +1,92 @@
+.review {
+  padding: 1rem;
+  border-radius: 20px;
+  width: 100%;
+  background-color: #d4d4d4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+}
+.image-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.review:last-child {
+  text-align: center;
+}
+.primary-btn {
+  margin-top: 1rem;
+  border: none;
+  color: purple;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  font-size: larger;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.primary-btn:hover {
+  color: red;
+  background-color: transparent;
+}
+h2 {
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+.job {
+  color: purple;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+.image-container::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: purple;
+  position: absolute;
+  top: -0.25rem;
+  right: -0.5rem;
+  border-radius: 50%;
+}
+
+.image-container span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: purple;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.random-person {
+  background-color: transparent;
+  color: purple;
+  border: none;
+  padding: 0.2rem 0.6rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.random-person:hover {
+  color: red;
+  background-color: transparent;
+}
